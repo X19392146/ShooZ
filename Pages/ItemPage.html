@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>ITEMS</title>
+<link rel="stylesheet" type="text/css" href="../CSS/ItemsStyle.css" />
+</head>
+<body>
+<ul>
+		<li><a href="../index.html">&nbsp; ShooZ &nbsp; </a></li>
+		<li><a href="../pages/aboutpage.html">&nbsp; ABOUT US &nbsp; </a></li>
+		<li><a href="../pages/ItemPage.html">&nbsp; SHOES &nbsp;</a></li>
+		<li><a href="../pages/login.html">&nbsp; LOGIN &nbsp;</a></li>
+		<li><a href="http://localhost:8000/">&nbsp; WISHLIST &nbsp;</a></li>
+		<li><a href="../pages/contactpage.html">&nbsp; CONTACT US &nbsp;</a></li>
+		<li><a href="../pages/visionpage.html">&nbsp; OUR VISION &nbsp;</a></li>
+</ul>
+<br/>
+<br/>
+
+<div class="top">
+<h1> ITEMS</h1>
+<p>The Items We Stock Are:<p>
+</div>
+
+
+<script>
+				var items = { 
+			
+				  "jordans" : [ // Jordans is an array in items.
+                        { "name" : "Jordan 1 ", // First element
+                          "code" : 4253,
+						  "color" : "Artic Pink",
+                          "sizeAvailability" : "uk 3 - 7"
+						},
+                        
+						 { "name" : "Jordan 1 ", // First element
+                          "code" : 4276,
+						  "color" : "Mocha",
+                          "sizeAvailability" : "uk 3 - 7"
+						},
+						
+						 { "name" : "Jordan Max Aura 2 ", // First element
+                          "code" : 6565,
+						  "color" : "Grey",
+                          "sizeAvailability" : "uk 1 - 5"
+						},
+						 { "name" : "Jordan Max Aura 2 ", // First element
+                          "code" : 6879,
+						  "color" : "Black",
+                          "sizeAvailability" : "uk 2 - 7"
+						},
+						
+                  ], // End "accounting" array.
+                  
+				  "AirForce" : [ // Air force is another Items.
+                        { "name" : "AirForce 1", // First element
+                          "code" : 1633,
+						  "color" : "White",
+                          "sizeAvailability" : "uk 1 - 10"
+						},
+                       { "name" : "Airforce 1 ", // First element
+                          "code" : 1221,
+						  "color" : "Black",
+                          "sizeAvailability" : "uk 2 - 9"
+						},
+						{ "name" : "Airforce 1 ", // First element
+                          "code" : 1090,
+						  "color" : "Blue",
+                          "sizeAvailability" : "uk 4 - 8"
+						},
+						{ "name" : "Airforce 1 ", // First element
+                          "code" : 1232,
+						  "color" : "pink",
+                          "sizeAvailability" : "uk 12 - 5"
+						},
+                   ] // End "Airforce" Array.
+            } // End items
+	</script>
+	
+	<h2>Jordans</h2>
+	
+	
+<table class= "jordanTable">
+<tr>
+<td><img id="img1" src="../images/pinknew2.png" alt="image"/><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.jordans[0].name + "<br>" + items.jordans[0].color + "<br>" + items.jordans[0].code+"<br>" +items.jordans[0].sizeAvailability+"<br>");
+
+
+	</script></td>
+<td><img id="img1" src="../images/mocha.png" alt="image" /><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.jordans[1].name + "<br>" + items.jordans[1].color + "<br>" + items.jordans[1].code+"<br>" +items.jordans[1].sizeAvailability+"<br>");
+
+
+	</script></td>
+	</tr>
+
+	<tr>
+	<br>
+<td><br><img id="img1" src="../images/aura2.png" alt="image" /><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.jordans[2].name + "<br>" + items.jordans[2].color + "<br>" + items.jordans[2].code+"<br>" +items.jordans[2].sizeAvailability+"<br>");
+
+
+	</script></td>
+	<td><br><img id="img1" src="../images/aurar.png" alt="image" /><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.jordans[3].name + "<br>" + items.jordans[3].color + "<br>" + items.jordans[3].code+"<br>" +items.jordans[3].sizeAvailability+"<br>");
+
+
+	</script></td>
+</tr>
+</table>
+<h3>AirForce 1</h3>
+<table class= "AFTable">
+<tr>
+<td><br><img id="img1" src="../images/whiteAF1.jpg" alt="image" /><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.AirForce[0].name + "<br>" + items.AirForce[0].color + "<br>" + items.AirForce[0].code+"<br>" +items.AirForce[0].sizeAvailability+"<br>");
+
+
+	</script></td>
+	<td><br><img id="img1" src="../images/airfoc.png" alt="image" /><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.AirForce[1].name + "<br>" + items.AirForce[1].color + "<br>" + items.AirForce[1].code+"<br>" +items.AirForce[1].sizeAvailability+"<br>");
+
+
+	</script></td>
+	</tr>
+	<tr>
+<td><br><img id="img1" src="../images/blue.png" alt="image" /><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.AirForce[2].name + "<br>" + items.AirForce[2].color + "<br>" + items.AirForce[2].code+"<br>" +items.AirForce[2].sizeAvailability+"<br>");
+
+
+	</script></td>
+	<td><br><img id="img1" src="../images/pink.png" alt="image" /><br>
+<script>
+			//PRINT DETAILS OF SHOE
+			document.writeln(items.AirForce[3].name + "<br>" + items.AirForce[3].color + "<br>" + items.AirForce[3].code+"<br>" +items.AirForce[3].sizeAvailability+"<br>");
+
+
+	</script></td>
+	</tr>
+	
+	
+</table>
+
+</body>
+
+
+
+
+</html>

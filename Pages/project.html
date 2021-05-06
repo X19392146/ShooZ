@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>Stock</title>
+	 <link rel="stylesheet" href="../CSS/shoes.css"/>
+</head>
+<body>
+
+<ul>
+		<li><a href="../index.html">&nbsp; ShooZ &nbsp; </a></li>
+		<li><a href="../pages/aboutpage.html">&nbsp; ABOUT US &nbsp; </a></li>
+		<li><a href="../pages/ItemPage.html">&nbsp; SHOES &nbsp;</a></li>
+		<li><a href="../pages/login.html">&nbsp; LOGIN &nbsp;</a></li>
+		<li><a href="http://localhost:8000/">&nbsp; WISHLIST &nbsp;</a></li>
+		<li><a href="../pages/contactpage.html">&nbsp; CONTACT US &nbsp;</a></li>
+		<li><a href="../pages/visionpage.html">&nbsp; OUR VISION &nbsp;</a></li>
+</ul>
+<br/>
+<br/>
+<br/>
+ <script type = "text/javascript">
+	var shoes = {
+	{"shoes":[
+  { "name":"Jordan1", "collectionName":"Jordans",
+   "category":"Trainers", "quantity":"10","sizesAvailable":"1-10", 
+   "price":"100",},
+  { "name":"Jordan2", "collectionName":"Jordans",
+   "category":"Trainers", "quantity":"5","sizesAvailable":"1-10", 
+   "price":"150",},
+  { "name":"Jordan3", "collectionName":"Jordans",
+   "category":"Trainers", "quantity":"50","sizesAvailable":"1-10",
+   "price":"50.99",},
+  { "name":"Nike AirForce", "collectionName":"Nike",
+   "category":"Trainers", "quantity":"45","sizesAvailable":"1-10",
+   "price":"100",},
+  { "name":"Adidas Gazelle", "collectionName":"Adidas",
+   "category":"Trainers", "quantity":"10","sizesAvailable":"1-10",
+   "price":"20.99",},
+  { "name":"John", "collectionName":"Jordans",
+   "category":"Trainers", "quantity":"10","sizesAvailable":"1-10", 
+   "price":"55.99",},
+]}
+	}
+</script>
+
+<h2>Make a table based on the value of a drop down menu.</h2>
+
+<select id="myselect" onchange="change_myselect(this.value)">
+  <option value="">Choose an option:</option>
+  <option value="customers">Nike</option>
+  <option value="products">Adidas</option>
+  <option value="suppliers">Jordans</option>
+</select>
+
+<p id="demo"></p>
+<table id="myTable">
+    <tr>
+        <th>Name</th>
+        <th>Collection Name</th>
+        <th>Category</th>
+    </tr>
+</table>
+<script type="text/javascript"  >
+$.ajax({
+    url: 'shoes.json',
+    dataType: 'json',
+    success: function(projectt) {
+        for (var i=0; i < data.length; i++) {
+            var row = $('<tr><td>' + projectt[i].name+ '</td><td>' + projectt[i].collectionName + '</td><td>' + projectt[i].category + '</td></tr>');
+            $('#myTable').append(row);
+        }
+    }
+    error: function(jqXHR, textStatus, errorThrown){
+        alert('Error: ' + textStatus + ' - ' + errorThrown);
+    }
+});
+</script>
+
+
+<script>
+function change_myselect(sel) {
+  var obj, dbParam, xmlhttp, myObj, x, txt = "";
+  obj = { table: sel, limit: 20 };
+  dbParam = JSON.stringify(obj);
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myObj = JSON.parse(this.responseText);
+      txt += "<table border='1'>"
+      for (x in myObj) {
+        txt += "<tr><td>" + myObj[x].name + "</td></tr>";
+      }
+      txt += "</table>"    
+      document.getElementById("demo").innerHTML = txt;
+      } 
+    };
+  xmlhttp.open("POST", "projectt.json", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("x=" + dbParam);
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

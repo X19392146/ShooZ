@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<title>Login Page</title>
+	
+	<link href="../css/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--Navigation Bar - linking other pages to index page-->
+<ul>
+		<li><a href="../index.html">&nbsp; ShooZ &nbsp; </a></li>
+		<li><a href="../pages/aboutpage.html">&nbsp; ABOUT US &nbsp; </a></li>
+		<li><a href="../pages/ItemPage.html">&nbsp; SHOES &nbsp;</a></li>
+		<li><a href="../pages/login.html">&nbsp; LOGIN &nbsp;</a></li>
+		<li><a href="http://localhost:8000/">&nbsp; WISHLIST &nbsp;</a></li>
+		<li><a href="../pages/contactpage.html">&nbsp; CONTACT US &nbsp;</a></li>
+		<li><a href="../pages/visionpage.html">&nbsp; OUR VISION &nbsp;</a></li>
+</ul>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!--Form For entering Email and password to login-->
+<form action="form_action.asp" method="get">
+<table>
+<tr>
+<td>Email Address:</td>
+<td><input id="email" type="text" name="email" /></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="passwd" /></td>
+</tr>
+<tr>
+<!--Creating Login Button-->
+<td><input id="btn3" type="button" value="Login"/></td>
+<!--Forgot Password Button-->
+<td><input type="button" onclick="show_prompt()" value ="Forget Password?"/></td>
+</tr>
+</table>
+</form>
+
+
+<!--JavaScript Promtbox for forgot password button to send user email-->
+<script language="JavaScript" type="text/javascript">
+/* Prompt from a Button */
+function show_prompt(){
+var name = prompt("Please enter your Email address and a reset password Email will be sent to your account");
+if (Email != null && email != "")
+{
+alert("An email has been sent to your account please follow the instructions provided");
+}
+else if (email == "")
+{
+alert("You must enter an email!!!");
+}
+else
+{
+alert("You pressed Cancel");
+}
+}
+</script>
+
+<!--JavaScript Button- User goes back to index page when the Login button is pressed-->
+<script type="text/javascript">
+document.getElementById("btn3").addEventListener("click", function(e){
+
+console.log("Pressed");
+e.preventDefault()
+// document.URL = "index.html";
+window.location="../index.html";
+});
+
+</script>
+
+</body>
+</html>
