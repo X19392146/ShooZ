@@ -1,0 +1,139 @@
+h1 {
+	color: black;
+	font-size: 36px;
+	text-align: center;
+}
+h2 {
+	color: #ffffff;
+	font-size: 36px;
+	text-align: center;
+}
+h3 {
+	color: #ffffff;
+	font-size: 36px;
+	text-align: center;
+}
+p{ 
+color: black;
+font-size: 24px;
+text-align: center;
+}
+.top {
+	background-color: #3cdddd;
+}
+/* styling all images the same*/
+
+#img1 {
+	
+	display: block;
+	width: 400px;
+	height: 300px;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*stting table of jordans*/
+
+.jordanTable { 
+font-size: 22px;
+text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+}
+/*styling air force table*/
+.AFTable { 
+font-size: 22px;
+text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+}
+
+/*Setting the background color*/
+body{
+	background-color: black;
+}
+/*Setting Font and font size of the navigation bar*/
+li {
+	font-size: 27px;
+	font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+}
+
+/*this is getting rid of the bullets in navigation bar*/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 12px;
+	overflow: hidden;
+	border: 1px solid #000000;
+	background-color: black  ;
+
+}
+
+/* making the tool bar horizontal*/
+
+li {
+	float: left;
+}
+
+/* changing writing to black*/
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px16px;
+	text-decoration: none;
+}
+
+/* change link color to dark on hover*/
+
+li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* make page your on light up */
+
+.active {
+	background: #000000;
+}
+
+/* border divider */
+
+li { 
+border-left: 1px solid #ffffff;
+}
+
+li:first-child {
+	border-left: none;
+}
+
+
+/* navigation bar stays of the top */
+ul { 
+position: fixed;
+top: 0;
+width: 98%;
+}
+
+/* floating bar items */
+
+li { 
+float: right;
+}
+li:first-child {
+	float: left;
+}
+/*Styling Buttons*/
+button {
+	font-size: 12px;
+	font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+	padding: 8px;
+	background-color: white;
+	color: black;
+	float: center;
+}
+/*Styling Writing on the page*/

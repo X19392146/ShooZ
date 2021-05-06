@@ -1,0 +1,89 @@
+/*Setting Font and font size of the navigation bar*/
+li {
+	font-size: 27px;
+	font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+}
+
+/*this is getting rid of the bullets*/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 12px;
+	overflow: hidden;
+	border: 1px solid #000000;
+	background-color: black  ;
+
+}
+
+/* making the tool bar horizontal*/
+
+li {
+	float: left;
+}
+
+/* changing writing to black*/
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px16px;
+	text-decoration: none;
+}
+
+/* change link color to dark on hover*/
+
+li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* make page your on light up */
+
+.active {
+	background: #000000;
+}
+
+/* border divider */
+
+li { 
+border-left: 1px solid #ffffff;
+}
+
+li:first-child {
+	border-left: none;
+}
+
+
+/* navigation bar stays of the top */
+ul { 
+position: fixed;
+top: 0;
+width: 98%;
+}
+
+/* floating bar items */
+
+li { 
+float: right;
+}
+li:first-child {
+	float: left;
+}
+
+body{
+	text-align:center;
+	background-color:black;
+	color:white;
+	background-image: url("jordans.jpg");
+	font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+}
+.title{
+	font-size: 30px;
+	border-style:solid;
+	background-color:	#20b2aa;
+	margin-top:10%;
+}
+
+

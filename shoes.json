@@ -1,0 +1,54 @@
+
+head[
+	{"heading":"The Shoes We Stock",},
+]
+types:[
+  { "name":"Jordan1", "collectionName":"Jordans",
+   "category":"Trainers", "quantity":"10","sizesAvailable":"1-10", 
+   "price":"100",},
+  { "name":"Jordan2", "collectionName":"Jordans",
+   "category":"Trainers", "quantity":"5",
+   "sizesAvailable": [
+   "5",
+   "6",
+   "7",
+   "8",
+   ], 
+   "price":"150",},
+  { "name":"Jordan3", "collectionName":"Jordans",
+   "category":"Trainers", "quantity":"50",
+   "sizesAvailable": [
+   "7",
+   "8",
+   "9",
+   "10",
+   ], 
+   "price":"50.99",},
+  { "name":"Nike AirForce", "collectionName":"Nike",
+   "category":"Trainers", "quantity":"45",
+     "sizesAvailable": [
+   "2",
+   "6",
+   "7",
+   "11",
+   ], 
+   "price":"100",},
+  { "name":"Adidas Gazelle", "collectionName":"Adidas",
+   "category":"Trainers", "quantity":"10",
+   "sizesAvailable": [
+   "7",
+   "9",
+   "11",
+   "14",
+   ], 
+   "price":"20.99",},
+  { "name":"Converse", "collectionName":"Converse",
+   "category":"Trainers", "quantity":"10",
+     "sizesAvailable": [
+   "12",
+   "1",
+   "5",
+   "8",
+   ], 
+   "price":"55.99",},
+]

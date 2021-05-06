@@ -1,0 +1,79 @@
+H1 {
+	font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+    margin-top: initial;
+    margin-bottom: initial;
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 3.0vw;
+	color: #ffffff;
+	background-color: #3cdddd;
+}
+
+body {
+	background-color: #000000;
+	
+
+ p {  
+   font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+   letter-spacing: 3px;
+    padding: 2em 0em;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+img { 
+     max-width: 100%;
+	 height: auto;
+}
+
+p{   
+   font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+   letter-spacing: 3px;
+    padding: 2em 0em;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+H2{ 
+    Font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+    margin-top: initial;
+    margin-bottom: initial;
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 3.5vw;
+	color:#ffffff;
+
+}
+
+H3 { Font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+    margin-top: initial;
+    margin-bottom: initial;
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 3.5vw;
+	color:#ffffff;
+}
+
+H4{ 
+Font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+    margin-top: initial;
+    margin-bottom: initial;
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 3.5vw;
+	BACKGROUND-COLOR: #ff9966;
+	color:#ffffff;
+}
+h5{
+	Font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+    margin-top: initial;
+    margin-bottom: initial;
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 3.5vw;
+	BACKGROUND-COLOR:  #ffcce6;
+	color:#ffffff;
+]}	

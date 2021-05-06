@@ -1,0 +1,140 @@
+/*Setting the background color*/
+body{
+	background-color: black;
+}
+/*Setting Font and font size of the navigation bar*/
+li {
+	font-size: 27px;
+	font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+}
+
+/*this is getting rid of the bullets*/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 12px;
+	overflow: hidden;
+	border: 1px solid #000000;
+	background-color: black  ;
+
+}
+
+/* making the tool bar horizontal*/
+
+li {
+	float: left;
+}
+
+/* changing writing to black*/
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px16px;
+	text-decoration: none;
+}
+
+/* change link color to dark on hover*/
+
+li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* make page your on light up */
+
+.active {
+	background: #000000;
+}
+
+/* border divider */
+
+li { 
+border-left: 1px solid #ffffff;
+}
+
+li:first-child {
+	border-left: none;
+}
+
+
+/* navigation bar stays of the top */
+ul { 
+position: fixed;
+top: 0;
+width: 98%;
+}
+
+/* floating bar items */
+
+li { 
+float: right;
+}
+li:first-child {
+	float: left;
+}
+
+
+
+
+
+ h1{ 
+font-family: brush script MT ;
+    margin-top: initial;
+    margin-bottom: initial;
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 3.0vw;
+	color: #ffffff ;
+	
+}
+
+p {
+	font-family: "hanson", "Super Grotesk Offc Medium","Helvetica","Arial","sans-serif";
+   letter-spacing: 3px;
+    padding: 2em 0em;
+    color: #ffffff;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+	
+
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #000000; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical ; 
+  
+ 
+}
+
+
+input[type=submit] {
+  background-color: #000000;
+  color: #3cdddd;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #3cdddd;
+  padding: 20px;
+}
